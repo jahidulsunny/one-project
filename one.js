@@ -105,3 +105,21 @@ while(true){
 }
 console.log(length)
 
+//046. JS Search Value in Array
+
+var arr=[3,4,54,,65,43,534,53,23,53,654,67534,34,7645,234,564,234,54,643,3245,234,643,243,214,45,123,423]
+
+var find=76458
+var isfound=false
+
+for(i=0;i<arr.length;i++){
+    if(arr[i]===find){
+        console.log('Data find on index '+i)
+        isfound=true
+        break
+    }
+}
+
+if(!isfound){
+    console.log('Data is not  found')
+}
