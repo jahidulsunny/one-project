@@ -123,3 +123,19 @@ for(i=0;i<arr.length;i++){
 if(!isfound){
     console.log('Data is not  found')
 }
+
+//047. Multidimensional Array 
+
+var arr1=[
+    [23,43,2,32,13],
+    [32,243,23,2],
+    [32,43,21,32,32],
+    [423,21,43,213],
+    [32,21,32,42]
+]
+
+for(i=0;i<arr1.length;i++){
+    for(j=0;j<arr1[i].length;j++){
+        console.log(arr1[i][j])
+    }
+}
