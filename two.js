@@ -61,3 +61,21 @@ var another = sample(3, 4, function (c, d) {
     return c - d
 })
 console.log(another)
+
+//074 Foreach Implementation in Javascript | Stack Learner
+var arr=[1,2,3,4,5,6,7,8,9]
+ var sum=0
+arr.forEach(function(value,index,arr){
+    sum+=value
+})
+console.log(sum)
+     //Implementing of forEach method
+function myForEach(arr,cb){
+    for(i=0;i<arr.length;i++){
+       cb(arr[i],i,arr)
+    }
+}
+myForEach(arr,function(value,index,arr){
+    console.log(value,index,arr)
+})
+
