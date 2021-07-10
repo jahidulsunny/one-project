@@ -64,6 +64,7 @@ console.log(another)
 
 //074 Foreach Implementation in Javascript | Stack Learner
 var arr=[1,2,3,4,5,6,7,8,9]
+var arr1=[2,4,6,8]
  var sum=0
 arr.forEach(function(value,index,arr){
     sum+=value
@@ -79,3 +80,6 @@ myForEach(arr,function(value,index,arr){
     console.log(value,index,arr)
 })
 
+myForEach(arr1,function(value,index,arr){
+    console.log(value,index,arr)
+})
