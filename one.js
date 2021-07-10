@@ -92,14 +92,14 @@ for (i = 1; i <= 10; i++) {
 
 //041. JS String Length 
 
-var str='Jahidul Islam Sunny'
+var str = 'Jahidul Islam Sunny'
 
-var length=0
+var length = 0
 
-while(true){
-    if(str.charAt(length)==''){
+while (true) {
+    if (str.charAt(length) == '') {
         break
-    }else{
+    } else {
         length++
     }
 }
@@ -107,35 +107,61 @@ console.log(length)
 
 //046. JS Search Value in Array
 
-var arr=[3,4,54,,65,43,534,53,23,53,654,67534,34,7645,234,564,234,54,643,3245,234,643,243,214,45,123,423]
+var arr = [3, 4, 54, , 65, 43, 534, 53, 23, 53, 654, 67534, 34, 7645, 234, 564, 234, 54, 643, 3245, 234, 643, 243, 214, 45, 123, 423]
 
-var find=76458
-var isfound=false
+var find = 76458
+var isfound = false
 
-for(i=0;i<arr.length;i++){
-    if(arr[i]===find){
-        console.log('Data find on index '+i)
-        isfound=true
+for (i = 0; i < arr.length; i++) {
+    if (arr[i] === find) {
+        console.log('Data find on index ' + i)
+        isfound = true
         break
     }
 }
 
-if(!isfound){
+if (!isfound) {
     console.log('Data is not  found')
 }
 
 //047. Multidimensional Array 
 
-var arr1=[
-    [23,43,2,32,13],
-    [32,243,23,2],
-    [32,43,21,32,32],
-    [423,21,43,213],
-    [32,21,32,42]
+var arr1 = [
+    [23, 43, 2, 32, 13],
+    [32, 243, 23, 2],
+    [32, 43, 21, 32, 32],
+    [423, 21, 43, 213],
+    [32, 21, 32, 42]
 ]
 
-for(i=0;i<arr1.length;i++){
-    for(j=0;j<arr1[i].length;j++){
+for (i = 0; i < arr1.length; i++) {
+    for (j = 0; j < arr1[i].length; j++) {
         console.log(arr1[i][j])
     }
 }
+
+//inner function
+function something(greet, name) {
+    function sayHi() {
+        console.log(greet, name)
+    }
+    sayHi()
+}
+something('Good Morning', 'Jahidul Sunny')
+
+
+function some(greet, name) {
+    function getFirstName() {
+        if (name) {
+            return name.split(' ')[0]
+        } else {
+            return ''
+        }
+    }
+    var massage = greet + ' ' + getFirstName()
+    console.log(massage)
+}
+some('hello', 'Jahidul sunny')
+
+
+
