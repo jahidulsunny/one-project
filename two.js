@@ -106,3 +106,25 @@ var sqr1=myMap(arrMap,function(value,index,arr){
     return value*value
 })
 console.log(sqr1)
+
+//076 Filter Function in Javascript | Stack Learner
+var filterArr=[4,8,34,54,34,56,32,5,2,1]
+var filter1=filterArr.filter(function(value){
+    return value<10
+})
+console.log(filter1)
+   //implementing of filter method
+
+function myFilter(arr,cb){
+    var filterArr1=[]
+    for(i=0;i<arr.length;i++){
+        if(cb(arr[i],i,arr))
+        filterArr1.push(arr[i])
+    }
+    return filterArr1
+}
+
+var new1=myFilter(filterArr,function(value){
+    return value>10
+})
+console.log(new1)
